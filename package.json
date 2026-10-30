@@ -1,0 +1,24 @@
+{
+  "name": "voiceforge-ai",
+  "version": "1.0.0",
+  "description": "VoiceForge AI - Turn business descriptions into structured JSON Rulebooks and create ElevenLabs conversational voice agents.",
+  "scripts": {
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,green\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build": "npm --prefix server run build && npm --prefix client run build"
+  },
+  "keywords": [
+    "voiceforge",
+    "elevenlabs",
+    "voice-agents",
+    "ai-rulebook",
+    "conversational-ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
